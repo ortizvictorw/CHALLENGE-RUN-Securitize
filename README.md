@@ -2,7 +2,6 @@
 
 This repository contains the necessary files to start Securitize-related projects.
 
-copy the ".develop.env" file and create a .env file
 
 ## Repositories
 
@@ -19,6 +18,7 @@ To get started, clone the following repositories:
   ```bash
   git clone https://github.com/ortizvictorw/CHALLENGE-REACT-Securitize.git
 
+copy the ".develop.env" in file and create a .env file
 
 - [API](https://github.com/ortizvictorw/CHALLENGE-NEST-Securitize.git
 )
