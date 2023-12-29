@@ -1,31 +1,32 @@
 version: '3'
+
 services:
   react-app:
     build:
-      context: ./CHALLENGE-REACT-Securitize
+      context: ../CHALLENGE-REACT-Securitize 
       dockerfile: Dockerfile 
     ports:
       - "3000:3000" 
 
   nest-api:
     build:
-      context: ./CHALLENGE-NEST-Securitize
+      context: ../CHALLENGE-NEST-Securitize 
       dockerfile: Dockerfile 
     ports:
-      - "3001:3001"
+      - "3001:3001" 
     depends_on:
       - postgres
 
   postgres:
     image: postgres:latest
     environment:
-      POSTGRES_DB: challenge-securitize
-      POSTGRES_USER: root
+      POSTGRES_DB: challenge-securitize 
+      POSTGRES_USER: root 
       POSTGRES_PASSWORD: root
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data 
 
 volumes:
-  postgres_data:
+  postgres_data: 
